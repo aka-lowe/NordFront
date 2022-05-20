@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormGroup, FormControl } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,10 +15,7 @@ import { SideEditorComponent } from './side-editor/side-editor.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormGroup,
-    FormControl,
-    HttpClient,
-    Injectable,
+    HttpClientModule,
     ReactiveFormsModule,
   ],
   providers: [],

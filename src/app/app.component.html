@@ -5,7 +5,7 @@
   <title>Triangle App?</title>
 </head>
 <body>
-<form [formGroup]="sideForm">
+<form id="sideForm" #sideForm>
   <table>
     <tr>
       <td>Length of side A</td>
@@ -20,15 +20,12 @@
       <td><input type="number" step="0.1" formControlName="sideC"/></td>
     </tr>
     <tr>
-      <td><button type="submit" [disabled]="!profileForm.valid">Submit</button></td>
+      <td><button type="submit" routerLink="/equilateral">Submit</button></td>
     </tr>
   </table>
 </form>
+<router-outlet></router-outlet>
 </body>
 </html>
 
-<!--<router-outlet></router-outlet>-->
 
-
-
-<!--(ngSubmit)="OnSubmit()">-->
